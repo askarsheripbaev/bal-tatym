@@ -4,7 +4,7 @@ import s from './HomePage.module.css'
 const HomePage = () => {
     return (
         <div>
-            Home
+            Главная страница
         </div>
     );
 };
