@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@400;500;700&family=Lato:wght@700&family=Lusitana&family=Merriweather:ital@1&family=Montserrat:wght@700&family=Noto+Sans&family=Noto+Sans+NKo&family=Raleway&family=Roboto:wght@300&display=swap" rel="stylesheet');
+
+.main_block {
+   display: flex;
+   margin-top: 6%;
+   margin-left: 12%;
+}
+
+.h4 {
+   font-family: 'Inter', sans-serif;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 60px;
+}
+
+.textP2 {
+   font-family: 'Inter', sans-serif;
+   font-size: 30px;
+}
+
+.textP {
+   display: none;
+}
+
+.span_web {
+   display: block;
+}
+
+.box_call {
+   margin-top: 12%;
+   background: #761919;
+   border: 1px solid #000000;
+   border-radius: 20px;
+   padding: 10px 20px;
+   width: 200px;
+   height: 50px;
+}
+
+.href_call {
+   font-family: 'Inter', sans-serif;
+   color: #FFFFFF;
+   padding-top: 20px;
+   font-size: 25px;
+}
+
+.img_call {
+   padding-left: 13px;
+}
+
+.imgHoney_phone {
+   display: none;
+}
+
+.imgHand_web {
+   position: absolute;
+   z-index: -20;
+   top: 0;
+   right: 0;
+}
+
+.imgHand_web2 {
+   position: absolute;
+   z-index: -10;
+   top: 0;
+   right: 0;
+}
+
+.imgLine7 {
+   position: absolute;
+   left: 27%;
+   top: 58%;
+}
+
+.img13 {
+   position: absolute;
+   left: 0px;
+   top: 58%;
+}
+
+.box_call_phone {
+   display: none;
+}
+
+.h2 {
+   display: none;
+}
+
+/* --------------- next block after catalog-------------- */
+.section_our_history {
+   margin-top: 27px;
+   margin-left: 11%;
+}
+
+.text_our_history {
+   font-size: 40px;
+   text-align: center;
+   font-family: 'Inter', sans-serif;
+}
+
+.div_flex {
+   display: flex;
+}
+
+.imgOurHistory {
+   padding-top: 8%;
+}
+
+.phone_p {
+   display: none;
+}
+
+.web_p {
+   font-size: 30px;
+   line-height: 36px;
+   color: grey;
+   font-family: 'Inter', sans-serif;
+   padding-bottom: 5%;
+}
+
+.eco_text_web {
+   padding-bottom: 75px;
+   font-size: 40px;
+   font-family: 'Inter', sans-serif;
+   color: #003049;
+}
+
+.eco_text {
+   display: none;
+}
+
+.text_block {
+   padding-top: 10%;
+   padding-left: 40px;
+}
+
+.text_more {
+   padding: 10px 22px;
+   font-size: 20px;
+   line-height: 24px;
+   color: #003049;
+}
+
+.box_more {
+   width: 150px;
+   border: 1px solid #003049;
+   border-radius: 20px;
+}
+
+/*  next block after slider */
+.section_reviews {
+   margin-left: 5%;
+}
+
+.div_reviews {
+   display: flex;
+   margin-top: 2%;
+}
+
+.div_reviews2 {
+   padding-top: 6%;
+}
+
+.div_reviews21 {
+   padding-top: 6%;
+   padding-left: 6%;
+}
+
+.imgPic2 {
+   padding-left: 6%;
+}
+
+.name_reviews {
+   padding-bottom: 10px;
+   font-size: 40px;
+}
+
+.p_reviews {
+   font-size: 30px;
+   color: #963131;
+}
+
+.p_reviews2 {
+   padding-top: 9%;
+   font-size: 30px;
+   color: #000000;
+   opacity: 0.7;
+}
+
+.span_phone1 {
+   display: block;
+}
+
+.img11 {
+   position: absolute;
+   right: 0;
+   top: 1200px;
+   transform: rotate(-13.72deg);
+}
+.imgPic1Pnone {
+   display: none;
+}
+.imgPic2Pnone {
+   display: none;
+}
+
+@media (max-width: 800px) {
+   .main_block {
+      display: flex;
+      margin-top: 0%;
+      margin-left: 0%;
+   }
+
+   .h4 {
+      display: none;
+   }
+
+   .h2 {
+      font-size: 20px;
+      display: block;
+   }
+
+   .imgHoney_phone {
+      display: block;
+      padding-top: 41px;
+   }
+
+   .textP {
+      display: block;
+      font-size: 16px;
+      font-family: 'Inter', sans-serif;
+   }
+
+   .textP2 {
+      display: none;
+   }
+
+   .phone_div {
+      padding-top: 70px;
+      font-family: 'Inter', sans-serif;
+      padding-left: 20px;
+   }
+
+   .box_call_phone {
+      margin-top: 33px;
+      display: block;
+      width: 150px;
+      height: 35px;
+      background: #761919;
+      border: 0.593244px solid #000000;
+      border-radius: 11.8649px;
+   }
+
+   .href_call_phone {
+      color: #FFFFFF;
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+
+   .img_call_phone {
+      padding-top: 5px;
+   }
+
+   .box_call {
+      display: none;
+   }
+
+   .imgHand_web {
+      display: none;
+   }
+
+   .imgHand_web2 {
+      display: none;
+   }
+
+   .img13 {
+      display: none;
+   }
+
+   .imgLine7 {
+      display: none;
+   }
+
+   /* ------------ next block after catalog */
+   .section_our_history {
+      margin-top: 30px;
+      margin-left: 0;
+   }
+
+   .text_our_history {
+      font-size: 20px;
+      padding-bottom: 20px;
+   }
+
+   .imgOurHistory {
+      padding-left: 15px;
+      width: 185.73px;
+      height: 203.04px;
+   }
+
+   .div_flex {
+      padding-top: 0;
+   }
+
+   .text_block {
+      padding-left: 15px;
+   }
+
+   .eco_text {
+      display: block;
+      padding-top: 5px;
+      padding-bottom: 20px;
+      font-size: 16px;
+      color: #003049;
+      font-family: 'Inter', sans-serif;
+   }
+
+   .web_p {
+      display: none;
+   }
+
+   .imgOurHistory {
+      padding-top: 0;
+   }
+
+   .phone_p {
+      display: block;
+      padding-bottom: 20px;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.8);
+   }
+
+   .box_more {
+      width: 100px;
+      border: 0.290749px solid #003049;
+      border-radius: 10px;
+   }
+
+   .text_more {
+      font-size: 18px;
+      padding-left: 6px;
+      padding-right: 6px;
+      padding-bottom: 3px;
+      padding-top: 3px;
+   }
+
+   .span_phone {
+      display: block;
+   }
+
+   .eco_text_web {
+      display: none;
+   }
+
+   .text_block {
+      padding-top: 0;
+   }
+
+   /* next block after slider */
+   .section_reviews {
+      margin-left: 0;
+   }
+
+   .name_reviews {
+      font-size: 16px;
+   }
+
+   .p_reviews {
+      font-size: 14px;
+   }
+
+   .p_reviews2 {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.8)
+   }
+
+   .imgPic2 {
+      width: 270.51px;
+      height: 320px;
+   }
+
+   .imgPic1 {
+     display: none;
+   }
+ 
+   .img11 {
+      display: none;
+   }
+   .imgPic1Pnone {
+      display: block;
+   }
+   .imgPic2Pnone {
+      display: block;
+   }
+}
