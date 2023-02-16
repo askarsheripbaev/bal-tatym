@@ -1,13 +1,12 @@
 import React from "react";
-import './App.css';
+import Header from '../Components/Layouts/Header/Header.jsx'
 
 
 function App() {
 
    return (
-       <div className={'background'}>
-          Test
-
+       <div className={'App'}>
+         <Header />
 
        </div>
    );
