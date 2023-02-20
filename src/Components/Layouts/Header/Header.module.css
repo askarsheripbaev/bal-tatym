@@ -12,13 +12,12 @@ body {
   width: 100%;
   font-weight: 400;
   font-size: 20px;
-  line-height: 24px;
 }
 
 .box {
   height: 80px;
   display: flex;
-  gap: 70px;
+  gap: 50px;
 }
 
 .logo_image {
@@ -31,8 +30,7 @@ body {
   display: flex;
   align-items: center;
   font-size: 22px;
-  line-height: 28px;
-  gap: 25px;
+  gap: 20px;
 }
 
 .mobile_btn {
@@ -75,8 +73,24 @@ body {
 .div_wrapper {
   padding-left: 200px;
   display: flex;
-  gap: 25px;
+  gap: 30px;
+}
 
+.button_language_phone {
+  display: none;
+}
+
+.imgLanguageRu {
+  padding-left: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.imgLanguageUSA {
+  cursor: pointer;
+}
+.button_language_web {
+  z-index: 20;
 }
 
 @media (max-width: 800px) {
@@ -178,6 +192,18 @@ body {
   .link_cart_phone {
     display: flex;
     padding-bottom: 30px;
+  }
+
+  .button_language_phone {
+    display: block;
+  }
+
+  .button_language_web {
+    display: none;
+  }
+
+  .imgLanguageRu_phone {
+    padding-left: 20px;
   }
 
   /* // -------------------------------------------------- */

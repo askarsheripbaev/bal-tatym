@@ -5,6 +5,7 @@ import {
     Route,
     Link 
 } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 import imgHand from '../../assets/image18.svg';
 import imgWhatsApp from '../../assets/Subtract.svg';
 import imgHoney from '../../assets/Ellipse4.svg';
@@ -20,24 +21,30 @@ import s from './HomePage.module.css';
 import OurHistoryPage from '../OurHistory/OurHistoryPage.jsx';
 
 const HomePage = () => {
+    const { t} = useTranslation();
     return (
         <>
             <section className={s.main_block}>
                 <div className={s.phone_div}>
-                    <h4 className={s.h4}>Прямиком из
-                        <span className={s.span_web}> пчелиных</span>
-                        ульев</h4>
-                    <p className={s.textP2}>Максимальная польза для <span className={s.span_web}>вашего здоровья!</span>  </p>
+                    <h4 className={s.h4}>
+                        {t("text-straight")}
+                        </h4>
+                    <p className={s.textP2}>
+                    {t("text-p")}
+                        </p>
 
-                    <h2 className={s.h2}>Прямиком из пчелиных ульев</h2>
-                    <p className={s.textP}>Максимальная польза вашего здоровья! </p>
+                       
+                    <h2 className={s.h2}> {t("text-straight")}</h2>
+                    <p className={s.textP}> {t("text-p")}</p>
                     <div className={s.box_call}>
-                        <a href="tel:+79146089174" className={s.href_call}>Связаться <img src={imgWhatsApp} alt="image of WhatsApp " className={s.img_call} /></a>
+                        <a href="tel:+79146089174" className={s.href_call}>{t("contact-us")}
+                        <img src={imgWhatsApp} alt="image of WhatsApp " className={s.img_call} /></a>
                     </div>
 
                     {/* версия для телефона */}
                     <div className={s.box_call_phone}>
-                        <a href="tel:+79146089174" className={s.href_call_phone}>Связаться <img src={imgWhatsApp} alt="image of WhatsApp " className={s.img_call_phone} /></a>
+                        <a href="tel:+79146089174" className={s.href_call_phone}>{t("contact-us")}
+                        <img src={imgWhatsApp} alt="image of WhatsApp " className={s.img_call_phone} /></a>
                     </div>
                 </div>
                 <img src={imgHand} alt="" className={s.imgHand_web} />
@@ -48,19 +55,24 @@ const HomePage = () => {
             </section>
             {/* third block after catalog  */ }         
                 <section className={s.section_our_history}>
-                    <p className={s.text_our_history}>Наша история</p>
+                    <p className={s.text_our_history}>{t("our-story")}</p>
                     <div className={s.div_flex}>
                         <div>
                             <img src={imgOurHistory} alt="beekeeper image" className={s.imgOurHistory} /></div>
                         <div className={s.text_block}>
-                            <h3 className={s.eco_text_web}> Высококачественный <span className={s.span_web}>экологический мед в</span>  Кыргызстане. </h3>
-                            <h3 className={s.eco_text}> Высококачественный экологический мед в Кыргызстане. </h3>
-                            <p className={s.web_p}>Наша компания была основана в 1996 году, хозяйство было начато
-                                c 16 семьями пчёл среднерусской породы...</p>
-                            <p className={s.phone_p}>Наша компания была <span className={s.span_phone}> основана в 1996 году, </span>хозяйство...</p>
+                            <h3 className={s.eco_text_web}>
+                            {t("high-quality")}            
+                                 </h3>
+                            <h3 className={s.eco_text}>   {t("high-quality")} </h3>
+                            <p className={s.web_p}> {t("our-company-web")}</p>
+                            <p className={s.phone_p}> {t("our-company-phone")}
+                                </p>
                              <Router>
                             <Link to="/our-history">
-                                <div className={s.box_more}> <p className={s.text_more}>Подробнее </p>
+                                <div className={s.box_more}> <p className={s.text_more}> 
+                            {/* Подробнее      */}
+                                {t("read-more")}
+                                </p>
                                 </div>
                             </Link>
                             <Switch>
@@ -72,33 +84,36 @@ const HomePage = () => {
                 </section>
                 
 <section className={s.section_reviews}>
-<p className={s.text_our_history}>Наши клиенты</p>
+<p className={s.text_our_history}>{t("our-clients")}</p>
 <div className={s.div_reviews}>
     <img src={imgPic1}  alt=""  className={s.imgPic1} />
     <img src={imgPic1Phone}  alt=""  className={s.imgPic1Pnone} />
     <div  className={s.div_reviews2}>
-        <p className={s.name_reviews}>Камилла Сафарова</p>
-    <p className={s.p_reviews}>Люблю чай с медом</p>
-    <p  className={s.p_reviews2}>Покупаю мед уже как 5 лет у Пчёлки. Очень 
-    <span className={s.span_phone1}>довольна продукцией за качество и цена у них </span>
-      довольно доступная. Рекомендую!</p>
+        <p className={s.name_reviews}>{t("camila")}</p>
+    <p className={s.p_reviews}>
+    {t("love-tea")}
+        </p>
+    <p  className={s.p_reviews2}>
+    {t("liked-product")}
+      </p>
     </div>  
  </div>
  <div className={s.div_reviews}> 
     <div className={s.div_reviews21}>
-        <p className={s.name_reviews}>Сергей Дадыбаев</p>
-    <p className={s.p_reviews}>Любимый мед моей бабушки</p>
-    <p className={s.p_reviews2}>Бабушка обожает мед, мой выбор пал на мед 
-    <span className={s.span_phone1}>компании Пчелка. Она просто без ума от него. </span>
-    <span className={s.span_phone1}>Доверяю свой выбор только им и к тому же</span>  цены классные. Спасибо)</p>
+        <p className={s.name_reviews}>
+        {t("sergey")}
+            </p>
+    <p className={s.p_reviews}>
+    {t("love-honey")}
+        </p>
+    <p className={s.p_reviews2}>
+    {t("grandma")}
+    </p>
     </div>  
     <img src={imgPic2}  className={s.imgPic2} alt="" />
  </div>
  <img src={img11} alt="" className={s.img11}/>
-
 </section>
-
-            
         </>
     );
 };

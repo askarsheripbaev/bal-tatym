@@ -1,29 +1,31 @@
 import React, { useState } from 'react';
-import logo from '../../../assets/logo.svg'
-import imgHome from '../../../assets/home.svg';
-import imgCall from '../../../assets/call.svg';
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import imgPerson from '../../../assets/person.svg';
-import imgShoppingCart from '../../../assets/local_mall.svg';
-import imgUsefulArticles from '../../../assets/emoji_objects.svg';
-import imgLanguage from '../../../assets/language1.svg';
-import imgProducts from '../../../assets/filter_frames.svg';
+import { useTranslation } from 'react-i18next';
+import i18n from '../../../Language/18n';
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
   Link
 } from "react-router-dom";
-import Products from '../../../Pages/Products/ProductsPage.jsx';
-import Contacts from '../../../Pages/Contacts/ContactsPage.jsx';
-import HomePage from '../../../Pages/Home/HomePage.jsx';
-import UsefulArticlesPage from '../../../Pages/UsefulArticles/UsefulArticlesPage.jsx';
-import ProfilePage from '../../../Pages/Profile/ProfilePage.jsx';
-import ShoppingCartPage from '../../../Pages/ShoppingCart/ShoppingCartPage.jsx';
+import logo from '../../../assets/logo.svg';
+import Home from '../../../assets/home.svg';
+import imgCall from '../../../assets/call.svg';
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import Person from '../../../assets/person.svg';
+import ShoppingCart from '../../../assets/local_mall.svg';
+import UsefulArticles from '../../../assets/emoji_objects.svg';
+import Products from '../../../assets/filter_frames.svg';
+import USA from '../../../assets/flag.svg';
+import Russia from '../../../assets/flagRussia.svg';
 import s from './Header.module.css'; // стили
 
 const Header = () => {
   const [header, setHeader] = useState(false);
+
+  // for language 
+  const { t, i18} = useTranslation();
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
   return (
     <Router>
       <header className={s.header}>
@@ -33,7 +35,6 @@ const Header = () => {
               <Link to="/"><img src={logo} alt="image of logo Bal Tatym" className='logo-img' />
               </Link>
             </div>
-
             <ul
               className={
                 header ? [s.menu, s.active].join(' ') : [s.menu]}>
@@ -42,46 +43,50 @@ const Header = () => {
               </div>
               <li>
                 <Link to="/" className={s.link_home2}>
-                  <img src={imgHome} className={s.img_home} alt="img of home" />
-                  <p>Главная</p>
+                  <img src={Home} className={s.img_home} alt="img of home" />
+                  <p>{t('home-page-header')}</p>
                 </Link>
               </li>
               <li>
                 <Link className={s.link_products} to='/products'>
-                  <img src={imgProducts} className={s.img_home} alt="img of home" />
-                  <p>Продукция</p>
+                  <img src={Products} className={s.img_home} alt="img of home" />
+                  <p>{t('products-header')}</p>
                 </Link>
               </li>
               <li>
                 <Link className={s.link_useful_articles} to='/useful-articles'>
-                  <img src={imgUsefulArticles} className={s.img_home} alt="img of home" />
-                  <p>Полезные статьи</p>
+                  <img src={UsefulArticles} className={s.img_home} alt="img of home" />
+                  <p>{t('articles-header')}</p>
                 </Link>
               </li>
               <li>
                 <Link to='/contacts' className={s.link_contacts}>
                   <img src={imgCall} className={s.img_home} alt="img of home" />
-                  <p>Контакты</p>
+                  <p>{t('contacts-header')}</p>
                 </Link>
               </li>
               {/* ----------------------------------------- это в декстоп версии */}
 
               <div className={s.div_wrapper}>
-                <li><img src={imgLanguage} alt="icon of language" className={s.language} /></li>
+                <li className={s.button_language_web}>
+                  {/* change language */}
+                  <img src={USA} alt="" onClick={() => changeLanguage('en')} className={s.imgLanguageUSA}/>
+                  <img src={Russia} alt="" onClick={() => changeLanguage('ru')} className={s.imgLanguageRu}/>
+                  </li>
                 <li className={s.li_cart}>
                   <Link to='/shopping-cart' className={s.link_cart_image}>
-                    <img src={imgShoppingCart} alt="img of home" />
+                    <img src={ShoppingCart} alt="img of home" />
                   </Link>
                   <Link to='/shopping-cart' className={s.link_cart_text}>
-                    <p>Корзина</p>
+                    <p>{t('shopping-cart-header')}</p>
                   </Link>
                 </li>
                 <li className={s.li_profile}>
                   <Link to='/profile-page' className={s.link_profile_img}>
-                    <img src={imgPerson} alt="img of home" />
+                    <img src={Person} alt="img of home" />
                   </Link>
                   <Link to='/profile-page' className={s.link_profile_text}>
-                    <p>Профиль</p>
+                    <p>{t('profile-header')}</p>
                   </Link>
                 </li>
               </div>
@@ -89,15 +94,19 @@ const Header = () => {
               {/* это версия в телефоне */}
               <li>
                 <Link className={s.link_cart_phone} to='/shopping-cart'>
-                  <img src={imgShoppingCart} className={s.img_home} alt="img of home" />
-                  <p>Корзина</p>
+                  <img src={ShoppingCart} className={s.img_home} alt="img of home" />
+                  <p>{t("shopping-cart-header")}</p>
                 </Link>
               </li>
               <li>
                 <Link to='/profile-page' className={s.link_cart_phone}>
-                  <img src={imgPerson} className={s.img_home} alt="img of home" />
-                  <p>Профиль</p>
+                  <img src={Person} className={s.img_home} alt="img of home" />
+                  <p>{t("profile-header")}</p>
                 </Link>
+              </li>
+              <li className={s.button_language_phone}>
+              <img src={USA} alt="" onClick={() => changeLanguage('en')} className={s.imgLanguageUSA_phone}/>
+                  <img src={Russia} alt="" onClick={() => changeLanguage('ru')} className={s.imgLanguageRu_phone}/>
               </li>
             </ul>
             <div onClick={() => setHeader(!header)} className={s.mobile_btn}>
@@ -107,26 +116,6 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <Switch>
-        <Route exact path="/">
-          <HomePage />
-        </Route>
-        <Route path="/products">
-          <Products />
-        </Route>
-        <Route path="/useful-articles">
-          <UsefulArticlesPage />
-        </Route>
-        <Route path="/contacts">
-          <Contacts />
-        </Route>
-        <Route path="/profile-page">
-          <ProfilePage />
-        </Route>
-        <Route path="/shopping-cart">
-          <ShoppingCartPage />
-        </Route>
-      </Switch>
    </Router>
   )
 }
