@@ -75,11 +75,15 @@ body {
 }
 
 .text_2020_web {
-    padding-top: 4%;
+    padding: 4%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
     font-size: 30px;
     line-height: 36px;
     text-align: center;
     color: #000000;
+    opacity: 0.8;
 }
 
 .text_2020_phone {
@@ -124,7 +128,7 @@ body {
  .imgFlower_web {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 50px;
  }
  .imgFlower_web11 {
     position: absolute;

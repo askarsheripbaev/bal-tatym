@@ -1,9 +1,12 @@
-import React from 'react'
-import './ProductsPage.module.css'
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import './ProductsPage.module.css';
 
 const ProductsPage = () => {
+  const {t} = useTranslation();
+
   return (
-    <div>Продукция</div>
+    <div>{t("products-header")}</div>
   )
 }
 
