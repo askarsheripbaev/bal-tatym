@@ -113,10 +113,11 @@ const Header = () => {
               {header ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
               {/*  AiOutlineClose это иконка закрыть, AiOutlineMenu а это иконка бургер меню */}
             </div>
+            
           </div>
         </div>
       </header>
-   </Router>
+   </Router> 
   )
 }
 
