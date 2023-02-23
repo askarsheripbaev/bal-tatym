@@ -18,27 +18,27 @@ function App() {
     <Suspense fallback={<div>Loading...</div>}>
       
     <Router>
-    <Header />
+    <Header /> 
   <Switch>
   <Route exact path="/">
           <HomePage />
         </Route>
-        <Route path="/products">
+        <Route path="/Products">
           <ProductsPage />
         </Route>
-        <Route path="/useful-articles">
+        <Route path="/Useful-articles">
           <UsefulArticlesPage />
         </Route>
-        <Route path="/contacts">
+        <Route path="/Contacts">
           <ContactsPage />
         </Route>
-        <Route path="/profile-page">
+        <Route path="/Profile-page">
           <ProfilePage />
         </Route>
-        <Route path="/shopping-cart">
+        <Route path="/Shopping-cart">
           <ShoppingCartPage />
         </Route>
-    <Route exact component={OurHistoryPage} path="/our-history">
+    <Route exact component={OurHistoryPage} path="/Our-history">
       <OurHistoryPage />
     </Route>
   </Switch>
