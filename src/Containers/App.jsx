@@ -14,37 +14,38 @@ import ShoppingCartPage from "../Pages/ShoppingCart/ShoppingCartPage.jsx";
 import ProfilePage from "../Pages/Profile/ProfilePage.jsx";
 
 function App() {
-   return (
+  return (
     <Suspense fallback={<div>Loading...</div>}>
-      
-    <Router>
-    <Header />
-  <Switch>
-  <Route exact path="/">
-          <HomePage />
-        </Route>
-        <Route path="/products">
-          <ProductsPage />
-        </Route>
-        <Route path="/useful-articles">
-          <UsefulArticlesPage />
-        </Route>
-        <Route path="/contacts">
-          <ContactsPage />
-        </Route>
-        <Route path="/profile-page">
-          <ProfilePage />
-        </Route>
-        <Route path="/shopping-cart">
-          <ShoppingCartPage />
-        </Route>
-    <Route exact component={OurHistoryPage} path="/our-history">
-      <OurHistoryPage />
-    </Route>
-  </Switch>
-  </Router>
-   </Suspense>
-   );
+
+      <Router>
+        <Header />
+        <Switch>
+          <Route exact path="/"  >
+            <HomePage />
+          </Route>
+
+          <Route path="/products">
+            <ProductsPage />
+          </Route>
+          <Route path="/Useful-articles">
+            <UsefulArticlesPage />
+          </Route>
+          <Route path="/Contacts">
+            <ContactsPage />
+          </Route>
+          <Route path="/Profile-page">
+            <ProfilePage />
+          </Route>
+          <Route path="/Shopping-cart">
+            <ShoppingCartPage />
+          </Route>
+          <Route exact component={OurHistoryPage} path="/Our-history">
+            <OurHistoryPage />
+          </Route>
+        </Switch>
+      </Router>
+    </Suspense>
+  );
 }
 
 export default App;

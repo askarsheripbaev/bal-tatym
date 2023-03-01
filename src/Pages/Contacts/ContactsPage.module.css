@@ -1,0 +1,241 @@
+.main_block {
+    padding-bottom: 9%;
+    padding-left: 11%;
+    padding-top: 6%;
+    display: flex;
+}
+
+.contacts {
+    padding-top: 4%;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+}
+
+.block {
+    display: flex;
+}
+
+.form {
+    padding-left: 15%;
+}
+
+.number {
+    padding-left: 70px;
+    display: block;
+}
+
+.what {
+    font-size: 27px;
+    line-height: 36px;
+}
+
+.box_what {
+    padding-bottom: 20px;
+}
+
+.telegram {
+    font-size: 27px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    display: block;
+}
+
+.distance {
+    padding-top: 40%;
+    display: flex;
+}
+
+.box_distance {
+    padding-left: 60px;
+}
+
+.distance_href {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 36px;
+}
+
+
+.name {
+    font-size: 27px;
+    padding: 16px 0px 16px 10px;
+    width: 517px;
+    height: 60px;
+    opacity: 0.8;
+    border: 1px solid #CECECE;
+    border-radius: 4px;
+}
+
+.name::placeholder {
+    background: url(../../assets/person.svg) no-repeat 1px y8px;
+    font-size: 27px;
+    line-height: 36px;
+    font-family: 'Inter', sans-serif;
+    color: #878787;
+    text-indent: 20px;
+}
+
+.email {
+    font-size: 27px;
+    margin-top: 20px;
+    padding: 16px 0px 16px 10px;
+    width: 517px;
+    height: 60px;
+    opacity: 0.8;
+    border: 1px solid #CECECE;
+    border-radius: 4px;
+}
+
+.email::placeholder {
+    background: url(../../assets/call.svg) no-repeat 1px 6px;
+    padding-left: 20px;
+    font-size: 27px;
+    line-height: 36px;
+    font-family: 'Inter', sans-serif;
+    color: #878787;
+}
+
+.message {
+    font-size: 27px;
+    resize: none;
+    margin-top: 20px;
+    padding: 16px 0px 16px 10px;
+    width: 517px;
+    height: 200px;
+    opacity: 0.3;
+    border: 1px solid #000000;
+    margin-bottom: 50px;
+}
+
+.message::placeholder {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 36px;
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+}
+
+.send {
+    font-size: 27px;
+    line-height: 36px;
+    color: #000000;
+    opacity: 0.8;
+    padding: 15px;
+    width: 249px;
+    ;
+    height: 66px;
+    background: #FDBF00;
+}
+
+.write_us {
+    display: none;
+}
+
+.message_error {
+    color: red;
+    display: block;
+}
+.flowers {
+    display: none;
+}
+.person {
+    padding-left: 10px;
+    padding-top: 20px;
+    z-index: 1;
+    position: absolute;
+}
+.call {
+    padding-left: 10px;
+    padding-top: 40px;
+    z-index: 1;
+    position: absolute;
+}
+
+
+@media (max-width: 800px) {
+    .write_us {
+        padding-bottom: 15px;
+        padding-top: 46px;
+        display: block;
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    .contacts {
+        font-size: 30px;
+    }
+
+    .main_block {
+        padding-left: 0;
+        display: block;
+    }
+
+    .distance {
+        padding-top: 0%;
+    }
+
+    .number {
+        padding-left: 0;
+    }
+
+    .telegram {
+        padding-left: 13px;
+        font-size: 25px;
+    }
+
+    .what {
+        padding-left: 13px;
+        font-size: 25px;
+    }
+
+    .box_distance {
+        padding-left: 13px;
+    }
+
+    .call_img {
+        padding-left: 27px;
+    }
+
+    .img_distance {
+        padding-left: 27px;
+    }
+
+    .form {
+        padding-left: 20px;
+    }
+
+    .name {
+        width: 350px;
+        height: 45.05px;
+    }
+
+    .email {
+        width: 350px;
+        height: 45.05px;
+    }
+
+    .message {
+        height: 137px;
+        width: 350px;
+    }
+
+    .send {
+        padding: 0;
+        font-size: 20.4776px;
+        line-height: 25px;
+        width: 168.52px;
+        height: 45.05px;
+    }
+
+    .flowers {
+        position: absolute;
+        display: block;
+        right: 0;
+        top: 740px;
+    }
+
+}
