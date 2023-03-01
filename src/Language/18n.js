@@ -4,7 +4,7 @@ import { initReactI18next } from 'react-i18next';
 
 i18n.use(Backend).use(initReactI18next).init({
     fallbackLng: 'ru',
-    debug: true,
+    // debug: true,
     detection: {
         order: ['gueryString', 'cookie'],
         cache: ['cookie']

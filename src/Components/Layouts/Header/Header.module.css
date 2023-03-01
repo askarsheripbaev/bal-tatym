@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@400;500;700&family=Lato:wght@700&family=Lusitana&family=Merriweather:ital@1&family=Montserrat:wght@700&family=Noto+Sans&family=Noto+Sans+NKo&family=Raleway&family=Roboto:wght@300&display=swap" rel="stylesheet');
 
-body {
-  background-color: #FDFAF2;
-  font-family: 'Inter', sans-serif;
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
 
 .header {
   width: 100%;

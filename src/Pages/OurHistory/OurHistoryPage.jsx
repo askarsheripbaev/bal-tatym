@@ -1,17 +1,17 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
-import imgOurHistory from '../../assets/banner21.svg'
-import img1block from '../../assets/Rectangle848.svg';
-import img2block from '../../assets/Rectangle850.svg';
-import img3block from '../../assets/Rectangle851.svg';
-import imgBeeHive from '../../assets/Ellipse1_history.svg';
-import imgBeeHivePhone from '../../assets/Ellipse1_history_phone.svg';
-import imgBackroundFlowerPhone from '../../assets/image14.svg';
-import imgBackroundFlower from '../../assets/image10.svg';
-import imgBackroundFlower11 from '../../assets/image11.svg';
-import imgBackroundFlower13 from '../../assets/image14.svg';
-import imgBackroundFlower12 from '../../assets/image12.svg';
-import imgBackroundFlower14 from '../../assets/image14.svg';
+import OurHistory from '../../assets/banner21.svg'
+import block1 from '../../assets/Rectangle848.svg';
+import block2 from '../../assets/Rectangle850.svg';
+import block3 from '../../assets/Rectangle851.svg';
+import BeeHive from '../../assets/Ellipse1_history.svg';
+import BeeHivePhone from '../../assets/Ellipse1_history_phone.svg';
+import BackroundFlowerPhone from '../../assets/image14.svg';
+import BackroundFlower from '../../assets/image10.svg';
+import BackroundFlower11 from '../../assets/image11.svg';
+import BackroundFlower13 from '../../assets/image14.svg';
+import BackroundFlower12 from '../../assets/image12.svg';
+import BackroundFlower14 from '../../assets/image14.svg';
 import s from './OurHistory.module.css';
 
 const OurHistoryPage = () => {
@@ -22,7 +22,7 @@ const OurHistoryPage = () => {
         <p className={s.text_our_history}>{t("our-story")}</p>
         <div className={s.div_flex}>
           <div>
-            <img src={imgOurHistory} alt="beekeeper image" className={s.imgOurHistory} />
+            <img src={OurHistory} alt="beekeeper image" className={s.OurHistory} />
           </div>
           <div className={s.text_block}>
             <h3 className={s.eco_text_web}> 
@@ -47,9 +47,9 @@ const OurHistoryPage = () => {
           {t("eric")}
         </h3>
         <div className={s.div_3blocks}>
-          <img src={img1block} alt="image of honey" className={s.img1block_phone} />
-          <img src={img2block} alt="image of honey" className={s.img2block_phone} />
-          <img src={img3block} alt="image of honey" className={s.img3block_phone} />
+          <img src={block1} alt="honey" className={s.block1_phone} />
+          <img src={block2} alt="honey" className={s.block2_phone} />
+          <img src={block3} alt="honey" className={s.block3_phone} />
         </div>
 
         <p className={s.text_2020_web}>
@@ -80,19 +80,19 @@ const OurHistoryPage = () => {
               {t("responsibilityText")}
               </p>
           </div>
-          <img src={imgBeeHive} className={s.imgBeeHive} alt="image og bee hive" />
-          <img src={imgBeeHivePhone} className={s.imgBeeHive_phone} alt="image og bee hive" />
+          <img src={BeeHive} className={s.BeeHive} alt="image og bee hive" />
+          <img src={BeeHivePhone} className={s.BeeHive_phone} alt="image og bee hive" />
 
-        </div> <img src={imgBackroundFlowerPhone} alt="image of flower" className={s.imgFlowerPhone} />
-        <img src={imgBackroundFlower} alt="image of flower" className={s.imgFlower_web} />
+        </div> <img src={BackroundFlowerPhone} alt="image of flower" className={s.FlowerPhone} />
+        <img src={BackroundFlower} alt="image of flower" className={s.Flower_web} />
 
-        <img src={imgBackroundFlower11} alt="image of flower" className={s.imgFlower_web11} />
+        <img src={BackroundFlower11} alt="image of flower" className={s.Flower_web11} />
 
-        <img src={imgBackroundFlower13} alt="image of flower" className={s.imgFlower_web13} />
+        <img src={BackroundFlower13} alt="image of flower" className={s.Flower_web13} />
 
-        <img src={imgBackroundFlower12} alt="image of flower" className={s.imgFlower_web12} />
+        <img src={BackroundFlower12} alt="image of flower" className={s.Flower_web12} />
 
-        <img src={imgBackroundFlower14} alt="image of flower" className={s.imgFlower_web14} />
+        <img src={BackroundFlower14} alt="image of flower" className={s.Flower_web14} />
       </section>
     </>
   )
