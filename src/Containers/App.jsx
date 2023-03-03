@@ -23,7 +23,6 @@ function App() {
           <Route exact path="/"  >
             <HomePage />
           </Route>
-
           <Route path="/products">
             <ProductsPage />
           </Route>
