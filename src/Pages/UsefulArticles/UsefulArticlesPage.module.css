@@ -1,0 +1,265 @@
+.Line5 {
+    z-index: -20;
+    position: absolute;
+    left: 0px;
+    top: -1px;
+}
+
+.block1 {
+    display: flex;
+}
+
+.useful {
+    margin-top: 5%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #000000;
+}
+
+.text_block1 {
+    padding-top: 10%;
+}
+
+.benefits {
+    padding-left: 17%;
+    color: #003049;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+}
+
+.benefits_text {
+    padding-top: 4%;
+    padding-left: 17%;
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.8;
+}
+
+.butterfly_phone {
+    display: none;
+}
+
+.benefits_textPhone1 {
+    display: none;
+}
+
+.benefits_textPhone2 {
+    display: none;
+}
+
+
+.how_text_main {
+    padding-right: 5%;
+}
+
+.how {
+    padding-top: 35%;
+    color:
+        #003049;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.how_text {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.8;
+}
+
+.honeySpoon_phone {
+    display: none;
+}
+
+.eat {
+    padding-top: 15%;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color:
+        #003049;
+}
+
+.eat_text {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.8;
+}
+
+.flower_honey {
+    padding: 4%;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+}
+
+.Line6 {
+    z-index: -10;
+    position: absolute;
+    left: 600px;
+    top: 947.58px;
+}
+
+.Line7 {
+    z-index: -10;
+    left: -10px;
+    top: 2200.74px;
+    width: 1000.23px;
+    height: 700.85px;
+    position: absolute;
+}
+
+.Line8 {
+    z-index: -10;
+    right: 0;
+    top: 2000px;
+    position: absolute;
+}
+
+.Line9 {
+    left: -189.19px;
+    top: 3400px;
+    position: absolute;
+    transform: rotate(80deg);
+}
+
+.Line10 {
+    left: 1000px;
+    top: 3500px;
+    position: absolute;
+    transform: rotate(80deg);
+    transform: rotate(180.73deg);
+}
+
+
+@media (max-width: 800px) {
+    .useful {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 26px;
+    }
+
+    .benefits {
+        padding-left: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .benefits_text {
+        display: none;
+    }
+
+    .butterfly_phone {
+        display: block;
+    }
+
+    .butterfly_web {
+        display: none;
+    }
+
+    .Line5 {
+        display: none;
+    }
+
+    .benefits_textPhone1 {
+        display: block;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+
+    .benefits_textPhone2 {
+        display: block;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+
+    .honeySpoon {
+        display: none;
+    }
+
+    .honeySpoon_phone {
+        padding-top: 30px;
+        display: block;
+    }
+
+    .how_text_main {
+        padding-top: 30px;
+    }
+
+    .how {
+        padding-top: unset;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .how_text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .eat {
+        padding-top: 0;
+        padding-left: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .eat_text {
+        padding-left: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .flower_honey {
+        color: #003049;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        padding-top: 50px;
+    }
+    
+.Line6 {
+display: none;
+}
+
+.Line7 {
+    display: none;
+}
+
+.Line8 {
+    display: none;
+}
+
+.Line9 {
+    display: none;
+}
+
+.Line10 {
+display: none;
+}
+
+}

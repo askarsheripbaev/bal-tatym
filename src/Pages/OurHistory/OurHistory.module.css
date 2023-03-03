@@ -19,7 +19,7 @@ body {
     display: flex;
 }
 
-.imgOurHistory {
+.OurHistory {
     padding-top: 8%;
 }
 
@@ -119,37 +119,37 @@ body {
     font-size: 30px;
     color: #000000;
 }
-.imgBeeHive_phone {
+.BeeHive_phone {
     display: none;
 }
- .imgFlowerPhone {
+ .FlowerPhone {
     display: none;
  }
- .imgFlower_web {
+ .Flower_web {
     position: absolute;
     right: 0;
     top: 50px;
  }
- .imgFlower_web11 {
+ .Flower_web11 {
     position: absolute;
    left: 0;
     top: 840px;
  }
- .imgFlower_web13 {
+ .Flower_web13 {
     width: 352.08px;
 height: 412.46px;
     position: absolute;
     right: 0;
      top: 1800px;
  }
- .imgFlower_web14 {
+ .Flower_web14 {
     position: absolute;
     width: 352.08px;
     height: 412.46px;
     left: 978.1px;
     top: 2989px;
  }
- .imgFlower_web12 {
+ .Flower_web12 {
     position: absolute;
     top: 0;
     top: 2850.89px;
@@ -166,7 +166,7 @@ height: 412.46px;
         padding-bottom: 20px;
     }
 
-    .imgOurHistory {
+    .OurHistory {
         padding-left: 15px;
         width: 185.73px;
         height: 203.04px;
@@ -192,7 +192,7 @@ height: 412.46px;
         display: none;
     }
 
-    .imgOurHistory {
+    .OurHistory {
         padding-top: 0;
     }
 
@@ -250,17 +250,17 @@ height: 412.46px;
         display: none;
     }
 
-    .img1block_phone {
+    .block1_phone {
         width: 165px;
         height: 165px;
     }
 
-    .img3block_phone {
+    .block3_phone {
         width: 165px;
         height: 165px;
     }
 
-    .img2block_phone {
+    .block2_phone {
         display: none;
     }
 
@@ -293,10 +293,10 @@ height: 412.46px;
         color: #000000;
     }
 
-    .imgBeeHive {
+    .BeeHive {
      display: none;
     }
-    .imgBeeHive_phone {
+    .BeeHive_phone {
         padding-left: -30px;
         display: unset;
     }
@@ -305,23 +305,23 @@ height: 412.46px;
         margin-right: unset;
         margin-left: 30px;
     }
-    .imgFlowerPhone {
+    .FlowerPhone {
         display: block;
         position: absolute;
         right: 0;
      }
-     .imgFlower_web {
+     .Flower_web {
         display: none;
      }
-     .imgFlower_web11 {
+     .Flower_web11 {
         display: none;
      }
-     .imgFlower_web13 {
+     .Flower_web13 {
         display: none;
      }
-     .imgFlower_web12 {
+     .Flower_web12 {
         display: none;
-     } .imgFlower_web14 {
+     } .Flower_web14 {
         display: none;
      }
 }

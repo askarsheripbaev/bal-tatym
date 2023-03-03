@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import logo from '../../../assets/logo.svg';
 import Home from '../../../assets/home.svg';
-import imgCall from '../../../assets/call.svg';
+import Call from '../../../assets/call.svg';
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Person from '../../../assets/person.svg';
 import ShoppingCart from '../../../assets/local_mall.svg';
@@ -21,7 +21,7 @@ const Header = () => {
   const [header, setHeader] = useState(false);
 
   // for language 
-  const { t, i18} = useTranslation();
+  const { t } = useTranslation();
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };
@@ -61,7 +61,7 @@ const Header = () => {
               </li>
               <li>
                 <Link to='/contacts' className={s.link_contacts}>
-                  <img src={imgCall} className={s.img_home} alt="img of home" />
+                  <img src={Call} className={s.img_home} alt="img of home" />
                   <p>{t('contacts-header')}</p>
                 </Link>
               </li>
@@ -70,9 +70,9 @@ const Header = () => {
               <div className={s.div_wrapper}>
                 <li className={s.button_language_web}>
                   {/* change language */}
-                  <img src={USA} alt="" onClick={() => changeLanguage('en')} className={s.imgLanguageUSA}/>
-                  <img src={Russia} alt="" onClick={() => changeLanguage('ru')} className={s.imgLanguageRu}/>
-                  </li>
+                  <img src={USA} alt="" onClick={() => changeLanguage('en')} className={s.imgLanguageUSA} />
+                  <img src={Russia} alt="" onClick={() => changeLanguage('ru')} className={s.imgLanguageRu} />
+                </li>
                 <li className={s.li_cart}>
                   <Link to='/shopping-cart' className={s.link_cart_image}>
                     <img src={ShoppingCart} alt="img of home" />
@@ -105,18 +105,19 @@ const Header = () => {
                 </Link>
               </li>
               <li className={s.button_language_phone}>
-              <img src={USA} alt="" onClick={() => changeLanguage('en')} className={s.imgLanguageUSA_phone}/>
-                  <img src={Russia} alt="" onClick={() => changeLanguage('ru')} className={s.imgLanguageRu_phone}/>
+                <img src={USA} alt="" onClick={() => changeLanguage('en')} className={s.imgLanguageUSA_phone} />
+                <img src={Russia} alt="" onClick={() => changeLanguage('ru')} className={s.imgLanguageRu_phone} />
               </li>
             </ul>
             <div onClick={() => setHeader(!header)} className={s.mobile_btn}>
               {header ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
               {/*  AiOutlineClose это иконка закрыть, AiOutlineMenu а это иконка бургер меню */}
             </div>
+
           </div>
         </div>
       </header>
-   </Router>
+    </Router>
   )
 }
 
